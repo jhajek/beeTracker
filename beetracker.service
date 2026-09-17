@@ -1,0 +1,23 @@
+# General structure created from https://copilot.microsoft.com/shares/SVpE8dfAbZVoWPrHNEicu
+[Unit]
+Description=Service to start BeeTracker Real-time bee tracking system
+After=network.target
+
+[Service]
+User=vagrant
+Group=vagrant
+WorkingDirectory=/home/vagrant
+/home/vagrant/.local/bin/uv run /home/vagrant/beeTracker/external_tracker.py --no-display
+
+Restart=always
+RestartSec=5
+KillSignal=SIGQUIT
+TimeoutStopSec=15
+SyslogIdentifier=beeTracker
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+ 
