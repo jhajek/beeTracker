@@ -7,7 +7,7 @@ After=network.target
 User=vagrant
 Group=vagrant
 WorkingDirectory=/home/vagrant
-/home/vagrant/.local/bin/uv run /home/vagrant/beeTracker/external_tracker.py --no-display
+ExecStart=/home/vagrant/.local/bin/uv run /home/vagrant/beeTracker/external_tracker.py --no-display
 
 Restart=always
 RestartSec=5
