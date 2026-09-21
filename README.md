@@ -88,7 +88,7 @@ Useful flags on the tracker:
 ```bash
 uv run external_tracker.py --no-display      # headless
 uv run external_tracker.py --no-publish      # skip the HLS pipeline
-uv run external_tracker.py --no-nvenc        # CPU encoding instead of NVENC
+#uv run external_tracker.py --no-nvenc        # CPU encoding instead of NVENC -- already built into the code
 uv run external_tracker.py --video test.mp4  # offline video file instead of RTSP
 ```
 
