@@ -45,7 +45,7 @@ import torch
 # Config
 load_dotenv()
 RTSP_URL=os.getenv("RTSP_URL")
-MODEL_PATH = "bee.pt"
+MODEL_PATH = "./bee.pt"
 INFERENCE_IMGSZ = 1024
 OUTPUT_DIR = Path("output")
 
