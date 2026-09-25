@@ -13,7 +13,8 @@ dependencies = [
     "scipy>=1.17.1",
     "supabase>=2.28.3",
     "ultralytics>=8.4.37",
-    "lap"
+    "lap",
+    "ffmpeg=python"
 ]
 [[tool.uv.index]]
 name = "pytorch-cu128"

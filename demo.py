@@ -347,7 +347,7 @@ def main():
     threading.Thread(target=summary_worker, daemon=True).start()
     threading.Thread(target=flush_worker, daemon=True).start()
 
-    print("Tracking started... (press ESC or Ctrl+C to stop)\n")
+    print("Tracking started... \n")
 
     try:
         while True:
